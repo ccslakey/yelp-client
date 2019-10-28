@@ -1,0 +1,29 @@
+
+.page {
+    padding: 24px 40px;
+}
+
+.brdr-radius {
+    border-radius: 4px;
+}
+
+.text-input {
+    min-width: 300px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #022c09c4;
+    padding: 0 10px;
+
+    @media (min-width: $breakpoint-md) {
+        min-width: 500px;;
+    }
+}
+
+
+
+.flex {
+    display: flex;
+    &.col {
+        flex-direction: column;
+    }
+}

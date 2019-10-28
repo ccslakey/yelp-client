@@ -1,0 +1,138 @@
+// Border Variables
+$border-radius-primary: 4px;
+
+// Media Query Breakpoints
+$breakpoint-xs: 320px; // smaller devices i.e. iPhone S, Pixel
+$breakpoint-sm: 480px; // small devices i.e. phablets - Pixel XL
+$breakpoint-md: 768px; // tablet devices
+$breakpoint-lg: 960px; // smaller laptop screens
+$breakpoint-xl: 1200px; // desktop and laptops
+$breakpoint-xxl: 1440px; // ultra-wide screens
+
+
+
+/* Spacing */
+
+//margins
+@mixin margin-size($size) {
+    .m-#{$size} {
+        margin: $size + px !important;
+    }
+
+    .mt-#{$size} {
+        margin-top: $size + px !important;
+    }
+
+    .mb-#{$size} {
+        margin-bottom: $size + px !important;
+    }
+
+    .ml-#{$size} {
+        margin-left: $size + px !important;
+    }
+
+    .mr-#{$size} {
+        margin-right: $size + px !important;
+    }
+
+    .mx-#{$size} {
+        margin-left: $size + px !important;
+        margin-right: $size + px !important;
+    }
+
+    .my-#{$size} {
+        margin-top: $size + px !important;
+        margin-bottom: $size + px !important;
+    }
+}
+
+@include margin-size(64);
+@include margin-size(60);
+@include margin-size(56);
+@include margin-size(52);
+@include margin-size(48);
+@include margin-size(44);
+@include margin-size(40);
+@include margin-size(36);
+@include margin-size(32);
+@include margin-size(28);
+@include margin-size(24);
+@include margin-size(20);
+@include margin-size(16);
+@include margin-size(12); 
+@include margin-size(10);
+@include margin-size(8);
+@include margin-size(4);
+@include margin-size(2);
+@include margin-size(0);
+@include margin-size(-4);
+@include margin-size(-16);
+@include margin-size(-32);
+@include margin-size(-52);
+@include margin-size(-64);
+
+//paddings
+@mixin padding-size($size) {
+    .p-#{$size} {
+        padding: $size + px !important;
+    }
+
+    .pt-#{$size} {
+        padding-top: $size + px !important;
+    }
+
+    .pb-#{$size} {
+        padding-bottom: $size + px !important;
+    }
+
+    .pl-#{$size} {
+        padding-left: $size + px !important;
+    }
+
+    .pr-#{$size} {
+        padding-right: $size + px !important;
+    }
+
+    .px-#{$size} {
+        padding-left: $size + px !important;
+        padding-right: $size + px !important;
+    }
+
+    .py-#{$size} {
+        padding-top: $size + px !important;
+        padding-bottom: $size + px !important;
+    }
+}
+
+@include padding-size(40);
+@include padding-size(32);
+@include padding-size(24);
+@include padding-size(16);
+@include padding-size(12);
+@include padding-size(8);
+@include padding-size(4);
+@include padding-size(2);
+@include padding-size(0);
+
+
+@mixin flex-size($size) {
+    .flex-#{$size} {
+        flex: $size !important;
+    }
+}
+
+@include flex-size(0);
+@include flex-size(1);
+@include flex-size(2);
+@include flex-size(3);
+@include flex-size(4);
+@include flex-size(5);
+@include flex-size(6);
+@include flex-size(7);
+@include flex-size(8);
+@include flex-size(9);
+@include flex-size(10);
+@include flex-size(11);
+@include flex-size(12);
+
+
